@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectGuide - Engineering Project Assistant</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-microchip me-2"></i>ProjectGuide
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#find-project">Find Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeIn">Build Amazing Engineering Projects</h1>
+                    <p class="lead mb-4 animate__animated animate__fadeIn animate__delay-1s">Discover and create innovative software and hardware projects tailored to your engineering interests, skill level, and available resources.</p>
+                    <div class="animate__animated animate__fadeIn animate__delay-2s">
+                        <a href="#find-project" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-search me-2"></i>Find Your Projects
+                        </a>
+                        <a href="#features" class="btn btn-outline-dark btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-illustration">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad" gradientTransform="rotate(45)">
+                                    <stop offset="0%" stop-color="#3498db" />
+                                    <stop offset="100%" stop-color="#2ecc71" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="250" cy="250" r="200" fill="url(#grad)" opacity="0.2" />
+                            <circle cx="250" cy="250" r="150" fill="url(#grad)" opacity="0.4" />
+                            <circle cx="250" cy="250" r="100" fill="url(#grad)" opacity="0.6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Use ProjectGuide?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4>Multiple Project Suggestions</h4>
+                        <p>Get multiple personalized project recommendations that match your interests, skill level, and available resources.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4>Step-by-Step Guides</h4>
+                        <p>Follow detailed instructions and tutorials that guide you from start to finish on your engineering journey.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Resource Management</h4>
+                        <p>Get recommendations based on the components you already have or stay within your budget for new acquisitions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>Video Tutorials</h4>
+                        <p>Access curated video tutorials that complement written instructions for a comprehensive learning experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Educational Focus</h4>
+                        <p>Each project is designed with learning objectives that align with engineering curriculum standards.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Community Support</h4>
+                        <p>Connect with other students working on similar projects to share insights and troubleshoot together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Find Project Section -->
+    <section id="find-project" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title text-center">Find Your Perfect Projects</h2>
+                    <p class="text-center mb-5">Tell us about your interests and requirements, and we'll recommend multiple projects for you to choose from.</p>
+                    
+                    <!-- Project Form -->
+                    <div class="form-container" id="projectForm">
+                        <form id="projectFinderForm">
+                            <div class="mb-4">
+                                <label for="interests" class="form-label">What are you interested in building?</label>
+                                <select class="form-select" id="interests" required>
+                                    <option value="" selected disabled>Choose your area of interest</option>
+                                    <option value="robotics">Robotics</option>
+                                    <option value="iot">Internet of Things (IoT)</option>
+                                    <option value="ai">Artificial Intelligence</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="mobile">Mobile Apps</option>
+                                    <option value="embedded">Embedded Systems</option>
+                                    <option value="game">Game Development</option>
+                                    <option value="electronics">Electronics</option>
+                                    <option value="mechanical">Mechanical Engineering</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="form-label">Difficulty Level</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficultyLevel" id="beginner" value="beginner" checked>
+                                    <label class="form-check-label" for="beginner">
+                                        Beginner - I'm just starting out
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficultyLevel" id="intermediate" value="intermediate">
+                                    <label class="form-check-label" for="intermediate">
+                                        Intermediate - I have some experience
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficultyLevel" id="advanced" value="advanced">
+                                    <label class="form-check-label" for="advanced">
+                                        Advanced - I'm looking for a challenge
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="components" class="form-label">Components You Already Have (Optional)</label>
+                                <select class="form-select" id="components" multiple>
+                                    <option value="arduino">Arduino Board</option>
+                                    <option value="raspberry">Raspberry Pi</option>
+                                    <option value="sensors">Various Sensors</option>
+                                    <option value="motors">Motors</option>
+                                    <option value="led">LEDs</option>
+                                    <option value="displays">Displays</option>
+                                    <option value="speakers">Speakers</option>
+                                    <option value="cameras">Cameras</option>
+                                    <option value="breadboards">Breadboards</option>
+                                    <option value="wires">Jumper Wires</option>
+                                </select>
+                                <div class="form-text">Hold Ctrl (or Cmd) to select multiple items</div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="budget" class="form-label">Budget Range (USD)</label>
+                                <select class="form-select" id="budget" required>
+                                    <option value="" selected disabled>Select your budget range</option>
+                                    <option value="under25">Under $25</option>
+                                    <option value="25to50">$25 - $50</option>
+                                    <option value="50to100">$50 - $100</option>
+                                    <option value="100to200">$100 - $200</option>
+                                    <option value="over200">Over $200</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="timeframe" class="form-label">Estimated Time to Complete</label>
+                                <select class="form-select" id="timeframe" required>
+                                    <option value="" selected disabled>Select timeframe</option>
+                                    <option value="day">Less than a day</option>
+                                    <option value="weekend">A weekend</option>
+                                    <option value="week">A week</option>
+                                    <option value="month">A month</option>
+                                    <option value="semester">A semester</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="projectCount" class="form-label">Number of Project Suggestions</label>
+                                <select class="form-select" id="projectCount" required>
+                                    <option value="3" selected>3 Projects</option>
+                                    <option value="5">5 Projects</option>
+                                    <option value="10">10 Projects</option>
+                                </select>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-search me-2"></i>Find Projects
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Loading State -->
+                    <div class="loading-container" id="loadingState">
+                        <div class="loading-spinner"></div>
+                        <h3>Finding the perfect projects for you...</h3>
+                        <p>Please wait while we analyze your preferences</p>
+                    </div>
+                    
+                    <!-- Results Container -->
+                    <div class="results-container" id="resultsContainer">
+                        <div class="text-center mb-5">
+                            <h3>Recommended Projects</h3>
+                            <p>Based on your preferences, we've found <span class="selected-count">5</span> projects that match your criteria:</p>
+                        </div>
+                        
+                        <div class="project-card-columns">
+                            <!-- Project 1 -->
+                            <div class="project-suggestion">
+                                <h4>Smart Home Monitoring System</h4>
+                                <div class="meta-info">
+                                    <span class="difficulty-badge medium">Intermediate</span>
+                                    <span class="ms-2"><i class="fas fa-clock me-1"></i> 2-3 weeks</span>
+                                    <span class="ms-2"><i class="fas fa-rupee-sign me-1"></i> ₹4000-₹8000</span>
+                                </div>
+                                <p>Build a system that monitors temperature, humidity, and motion in your home, with data visualization and remote notifications.</p>
+                                <button class="show-details-btn" data-project="project1">Show Details</button>
+                                
+                                <div id="project1" class="project-details-container">
+                                    <h5 class="mb-3">Required Components</h5>
+                                    <ul class="list-group mb-4">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Arduino Uno or ESP8266
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            DHT11 Temperature & Humidity Sensor
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            PIR Motion Sensor
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Breadboard and Jumper Wires
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            OLED Display
+                                            <span class="badge bg-secondary rounded-pill">Optional</span>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h5 class="mb-3">Step-by-Step Guide</h5>
+                                    <div class="step-container">
+                                        <div class="step-number">1</div>
+                                        <h6>Setting Up Your Hardware</h6>
+                                        <p>Connect your sensors to the Arduino using the provided circuit diagram. Make sure all connections are secure before powering up.</p>
+                                    </div>
+                                    <div class="step-container">
+                                        <div class="step-number">2</div>
+                                        <h6>Installing Required Libraries</h6>
+                                        <p>Through the Arduino IDE, install the DHT sensor library and any other required libraries for your components.</p>
+                                    </div>
+                                    <div class="step-container">
+                                        <div class="step-number">3</div>
+                                        <h6>Writing the Sensor Code</h6>
+                                        <p>Implement the basic code to read data from your sensors and display it on the serial monitor.</p>
+                                    </div>
+                                    
+                                    <h5 class="mb-3">Video Tutorials</h5>
+                                    <div class="list-group mb-3">
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <i class="fab fa-youtube me-2 text-danger"></i>
+                                            Getting Started with Arduino and Sensors
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <i class="fab fa-youtube me-2 text-danger"></i>
+                                            Setting Up WiFi Communication with ESP8266
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 2 -->
+                            <div class="project-suggestion">
+                                <h4>Voice Controlled Smart Lighting</h4>
+                                <div class="meta-info">
+                                    <span class="difficulty-badge medium">Intermediate</span>
+                                    <span class="ms-2"><i class="fas fa-clock me-1"></i> 1-2 weeks</span>
+                                    <span class="ms-2"><i class="fas fa-rupee-sign me-1"></i> ₹4000-₹6000</span>
+                                </div>
+                                <p>Build a system that lets you control your room lights using voice commands through a smartphone app or smart speaker.</p>
+                                <button class="show-details-btn" data-project="project2">Show Details</button>
+                                
+                                <div id="project2" class="project-details-container">
+                                    <h5 class="mb-3">Required Components</h5>
+                                    <ul class="list-group mb-4">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            NodeMCU ESP8266
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Relay Module (1-4 Channel)
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Jumper Wires
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Breadboard
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Smartphone with Google Assistant or Amazon Alexa
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h5 class="mb-3">Step-by-Step Guide</h5>
+                                    <div class="step-container">
+                                        <div class="step-number">1</div>
+                                        <h6>Setting Up the Hardware</h6>
+                                        <p>Connect the relay module to the ESP8266 following the wiring diagram. Ensure all connections are secure.</p>
+                                    </div>
+                                    <div class="step-container">
+                                        <div class="step-number">2</div>
+                                        <h6>Programming the ESP8266</h6>
+                                        <p>Flash the ESP8266 with the provided code to connect to WiFi and control the relay.</p>
+                                    </div>
+                                    <div class="step-container">
+                                        <div class="step-number">3</div>
+                                        <h6>Setting Up IFTTT</h6>
+                                        <p>Create IFTTT applets to connect your voice assistant to your ESP8266 device.</p>
+                                    </div>
+                                    
+                                    <h5 class="mb-3">Video Tutorials</h5>
+                                    <div class="list-group mb-3">
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <i class="fab fa-youtube me-2 text-danger"></i>
+                                            ESP8266 and Relay Control Basics
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <i class="fab fa-youtube me-2 text-danger"></i>
+                                            Integrating with Voice Assistants using IFTTT
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 3 -->
+                            <div class="project-suggestion">
+                                <h4>Automated Plant Watering System</h4>
+                                <div class="meta-info">
+                                    <span class="difficulty-badge easy">Beginner</span>
+                                    <span class="ms-2"><i class="fas fa-clock me-1"></i> 1-2 days</span>
+                                    <span class="ms-2"><i class="fas fa-rupee-sign me-1"></i> ₹2000-₹3200</span>
+                                </div>
+                                <p>Create a system that monitors soil moisture and automatically waters your plants when they need it.</p>
+                                <button class="show-details-btn" data-project="project3">Show Details</button>
+                                
+                                <div id="project3" class="project-details-container">
+                                    <h5 class="mb-3">Required Components</h5>
+                                    <ul class="list-group mb-4">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Arduino Uno
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Soil Moisture Sensor
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Water Pump (5V DC)
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Relay Module
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Silicon Tubing
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h5 class="mb-3">Step-by-Step Guide</h5>
+                                    <div class="step-container">
+                                        <div class="step-number">1</div>
+                                        <h6>Assembling the Circuit</h6>
+                                        <p>Connect the soil moisture sensor and relay module to the Arduino following the provided schematic.</p>
+                                    </div>
+                                    <div class="step-container">
+                                        <div class="step-number">2</div>
+                                        <h6>Programming the Arduino</h6>
+                                        <p>Upload the provided code to read soil moisture levels and activate the pump when needed.</p>
+                                    </div>
+                                    <div class="step-container">
+                                        <div class="step-number">3</div>
+                                        <h6>Testing and Calibration</h6>
+                                        <p>Test the system with different soil conditions and adjust the moisture threshold as needed.</p>
+                                    </div>
+                                    
+                                    <h5 class="mb-3">Video Tutorials</h5>
+                                    <div class="list-group mb-3">
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <i class="fab fa-youtube me-2 text-danger"></i>
+                                            Getting Started with Soil Moisture Sensors
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <i class="fab fa-youtube me-2 text-danger"></i>
+                                            Building an Automated Watering System
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 4 -->
+                            <div class="project-suggestion">
+                                <h4>Line Following Robot</h4>
+                                <div class="meta-info">
+                                    <span class="difficulty-badge easy">Beginner</span>
+                                    <span class="ms-2"><i class="fas fa-clock me-1"></i> 2-3 days</span>
+                                    <span class="ms-2"><i class="fas fa-rupee-sign me-1"></i> ₹2400-₹4000</span>
+                                </div>
+                                <p>Build a robot that can automatically follow a black line on the floor using infrared sensors.</p>
+                                <button class="show-details-btn" data-project="project4">Show Details</button>
+                                
+                                <div id="project4" class="project-details-container">
+                                    <h5 class="mb-3">Required Components</h5>
+                                    <ul class="list-group mb-4">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Arduino Uno or Nano
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Robot Chassis with Motors
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            IR Sensors (2-3)
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            L298N Motor Driver
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Battery Pack (6-12V)
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h5 class="mb-3">Step-by-Step Guide</h5>
+                                    <div class="step-container">
+                                        <div class="step-number">1</div>
+                                        <h6>Assembling the Robot Chassis</h6>
+                                        <p>Mount the motors to the chassis and attach the wheels according to the provided instructions.</p>
+                                    </div>
+                                    <div class="step-container">
+                                        <div class="step-number">2</div>
+                                        <h6>Setting Up the IR Sensors</h6>
+                                        <p>Mount the IR sensors to the front of the chassis, pointing downward toward the floor.</p>
+                                    </div>
+                                    <div class="step-container">
+                                        <div class="step-number">3</div>
+                                        <h6>Wiring the Components</h6>
+                                        <p>Connect the IR sensors and motor driver to the Arduino following the provided wiring diagram.</p>
+                                    </div>
+                                    
+                                    <h5 class="mb-3">Video Tutorials</h5>
+                                    <div class="list-group mb-3">
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <i class="fab fa-youtube me-2 text-danger"></i>
+                                            Building a Basic Line Following Robot
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <i class="fab fa-youtube me-2 text-danger"></i>
+                                            Calibrating IR Sensors for Optimal Performance
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 5 -->
+                            <div class="project-suggestion">
+                                <h4>Weather Station with Web Dashboard</h4>
+                                <div class="meta-info">
+                                    <span class="difficulty-badge medium">Intermediate</span>
+                                    <span class="ms-2"><i class="fas fa-clock me-1"></i> 1-2 weeks</span>
+                                    <span class="ms-2"><i class="fas fa-rupee-sign me-1"></i> ₹3200-₹5600</span>
+                                </div>
+                                <p>Create a station that measures temperature, humidity, pressure, and more, with data displayed on a web dashboard.</p>
+                                <button class="show-details-btn" data-project="project5">Show Details</button>
+                                
+                                <div id="project5" class="project-details-container">
+                                    <h5 class="mb-3">Required Components</h5>
+                                    <ul class="list-group mb-4">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            ESP32 or ESP8266
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            BME280 (Temperature, Humidity, Pressure sensor)
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Light Sensor (LDR or BH1750)
+                                            <span class="badge bg-primary rounded-pill">Required</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Rain Sensor
+                                            <span class="badge bg-secondary rounded-pill">Optional</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Solar Panel and Battery
+                                            <span class="badge bg-secondary rounded-pill">Optional</span>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h5 class="mb-3">Step-by-Step Guide</h5>
+                                    <div class="step-container">
+                                        <div class="step-number">1</div>
+                                        <h6>Connecting the Sensors</h6>
+                                        <p>Wire the BME280 and light sensor to the ESP32/ESP8266 using I2C communication.</p>
+                                    </div>
+                                    <div class="step-container">
+                                        <div class="step-number">2</div>
+                                        <h6>Programming the Microcontroller</h6>
+                                        <p>Upload the provided code to read sensor data and publish it to a web server or cloud platform.</p>
+                                    </div>
+                                    <div class="step-container">
+                                        <div class="step-number">3</div>
+                                        <h6>Setting Up the Web Dashboard</h6>
+                                        <p>Create a simple web interface using HTML, CSS, and JavaScript to display your weather data.</p>
+                                    </div>
+                                    
+                                    <h5 class="mb-3">Video Tutorials</h5>
+                                    <div class="list-group mb-3">
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <i class="fab fa-youtube me-2 text-danger"></i>
+                                            ESP32/ESP8266 Weather Station Tutorial
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <i class="fab fa-youtube me-2 text-danger"></i>
+                                            Creating Interactive Web Dashboards for IoT Projects
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-5">
+                            <button id="startOverBtn" class="btn btn-outline-primary">
+                                <i class="fas fa-redo me-2"></i>Start Over
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">About ProjectGuide</h2>
+                    <p class="lead">We're on a mission to make engineering education more accessible and hands-on.</p>
+                    <p>ProjectGuide was created by a team of engineering educators and professionals who believe that the best way to learn is by doing. Our platform connects engineering students with tailored project ideas and comprehensive guides that match their interests, skill level, and available resources.</p>
+                    <p>Whether you're a first-year student looking to build your first circuit or a senior working on your capstone project, ProjectGuide provides the structure and guidance you need to succeed.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Our Impact</h4>
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <h3 class="fw-bold text-primary">10K+</h3>
+                                    <p>Students</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="fw-bold text-primary">500+</h3>
+                                    <p>Projects</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="fw-bold text-primary">100+</h3>
+                                    <p>Universities</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <h5>What Students Say</h5>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"ProjectGuide helped me turn my theoretical knowledge into practical skills. I built a smart irrigation system that won first place at our engineering showcase!"</p>
+                                <footer class="blockquote-footer mt-2">Michael Chen, Electrical Engineering Student</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <p class="text-center mb-5">Have questions or suggestions? We'd love to hear from you!</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="form-container">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">ProjectGuide</h5>
+                    <p>Empowering engineering students to learn through hands-on projects tailored to their interests and skill levels.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#features" class="text-white text-decoration-none">Features</a></li>
+                        <li class="mb-2"><a href="#find-project" class="text-white text-decoration-none">Find Project</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Resources</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Tutorials</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Component Guide</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Forum</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-uppercase mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest project ideas and tutorials.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 ProjectGuide. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="app.js">
+        
+    </script>
+</body>
+</html>
