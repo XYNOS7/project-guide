@@ -54,8 +54,7 @@ Find your perfect engineering project idea in seconds — tailored to your skill
 
 ## 🚀 Live Demo
 
-🔗 **View Project Here:** [https://your-netlify-link.netlify.app](https://projectguide.netlify.app)  
-*(Replace with your actual Netlify link)*  
+🔗 **View Project Here:** [https://your-netlify-link.netlify.app](https://projectguide.netlify.app)    
 
 ---
 
